@@ -1,0 +1,211 @@
+body {
+    font-family: "PT Sans";
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.logo { 
+    width: 120px;
+    height: 60px;
+}
+
+.main-navigation {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.site-navigation {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+
+.site-navigation a:hover, 
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #b2b2b2;
+}
+
+.site-navigation a.site-navigation-current {
+    color: #766357;
+}
+
+.intro h1 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* ********************************* main page ************************************************** */
+
+.sedona-welcome {
+    background-image: url("../img/welcome-background.png");
+    background-repeat: no-repeat;
+    height: 580px;
+}
+
+.sedona-welcome img {
+    width: 400px;
+    margin-top: 130px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.reason-item-big .description {
+    background-color: #3d91c5;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.features-list .feature-item {
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reasons-list h2, .feature-item h2 {
+    font-weight: 600;
+}
+
+
+.reason-item {
+    background-color: #eeeeee;
+}
+
+ .booking h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main-footer {
+    background-color: #f9fbf6;
+} 
+
+.footer.social  a {
+    background-color: #81b3d2;
+    padding: 10px;
+}
+
+.footer.social  a:hover, footer a:focus {
+    background-color: #669ec0;
+}
+
+.footer.social a:active {
+    background-color: #5496bd;
+}
+
+footer a:active img {
+    color: black;
+}
+
+.search-form {
+    width: 570px;
+    height: 480px;
+    border: solid 1px;
+
+}
+
+.search-form label {
+    font-weight: 700;
+}
+
+.search-form .form-title {
+    background-color: #766357;
+    height: 85px;
+    line-height: 85px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.search-form .form-body {
+    padding: 15px 60px 60px 60px;
+}
+
+.search-form .form-item {
+    line-height: 50px;
+}
+
+.search-form button {
+    width: 460px;
+    height: 60px;
+    background-color: #81b3d2;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+
+/* ******************************************  catalog page  ******************************************** */
+
+.hotel-item img {
+    width: 135px;
+    height: 90px;
+}
+
+.hotel-title a {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.hotel-link {
+    padding: 7px 16px 9px 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hotel-link.view-more {
+    background-color: #81b3d2;
+}
+
+.hotel-link.book {
+    background-color: #766357;
+}
+
+.hotel-item-rating {
+    display: flex;
+}
+
+.hotel-item-rating .star {
+    background-image: url("../img/star.png");
+    background-repeat: no-repeat;  
+    width: 19px; 
+}
+
+.rating {
+    background-color: #f2f2f2;
+    padding: 8px 14px 8px 16px;
+}
