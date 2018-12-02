@@ -96,7 +96,7 @@
 					и мы покажем вам лучшие предложения гостиниц в седоне
 				</p>
 				<form class="search-form" action="/search" method="POST">
-					<p class="form-title">Поиск гостиницы в Седоне</p>
+					<button class="form-title" type="button">Поиск гостиницы в Седоне</button>
 					<section class="form-body">
 						<p class="form-item">
 							<label for="arrival-date">Дата заезда</label>
@@ -108,9 +108,13 @@
 						</p>
 						<p class="form-item">
 							<label for="adults">Взрослые</label>
+							<input type="text"/>
 							<input type="number" id="adults" />
+							<input type="text" />
 							<label for="children">Дети</label>
+							<input type="text"/>
 							<input type="number" id="children" />
+							<input type="text" />
 						</p>
 						<p class="form-item">
 							<button class="button" type="submit">Найти</button>
@@ -125,16 +129,19 @@
 		<div class="footer social">
 			<ul>
 				<li>
+					<span class="visually-hidden">twitter</span>
 					<a class="social button" href="#">
 						<img src="img/logo-twitter.svg" />
 					</a>
 				</li>
 				<li>
+					<span class="visually-hidden">facebook</span>
 					<a class="social button" href="#">
 						<img src="img/logo-fb.svg" />
 					</a>
 				</li>
 				<li>
+					<span class="visually-hidden">youtube</span>
 					<a class="social button" href="#">
 						<img src="img/logo-youtube.svg" />
 					</a>
@@ -145,7 +152,7 @@
 		<div class="logo">
 			<span>website by</span>
 			<a href="https://htmlacademy.ru">
-				<img src="img/logo-academy.svg" width="50" height="60" alt="Логотип Академии">
+				<img src="img/logo-academy.svg" width="150" height="60" alt="Логотип Академии">
 			</a>
 		</div>
 	</footer>

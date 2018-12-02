@@ -1,3 +1,15 @@
+/* global */
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+/* site */
+
 body {
     font-family: "PT Sans";
     color: #000000;
@@ -51,12 +63,14 @@ ul {
     color: #766357;
 }
 
-.intro h1 {
-    font-size: 21px;
-    font-weight: 400;
-}
+
 
 /* ********************************* main page ************************************************** */
+
+.intro h1 {
+    font-size: 21px;
+    font-weight: bold;
+}
 
 .sedona-welcome {
     background-image: url("../img/welcome-background.png");
@@ -68,6 +82,8 @@ ul {
     width: 400px;
     margin-top: 130px;
 }
+
+
 
 .container {
     width: 1200px;
@@ -113,7 +129,7 @@ ul {
     padding: 10px;
 }
 
-.footer.social  a:hover, footer a:focus {
+.footer.social  a:hover, .footer a:focus {
     background-color: #669ec0;
 }
 
@@ -147,6 +163,16 @@ footer a:active img {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.form-title:active {
+    background-color: #604e43;
+    color: #857871;
+}
+
+.form-title:focus, .form-title:hover {
+    background-color: #503e33;
+}
+
 
 .search-form .form-body {
     padding: 15px 60px 60px 60px;
@@ -191,8 +217,34 @@ footer a:active img {
     background-color: #81b3d2;
 }
 
+.hotel-link.view-more:active {
+    background-color: #5496bd;
+    color: #7aadcb;
+}
+
+.hotel-link.view-more:focus, .hotel-link.view-more:hover {
+    background-color: #669ec0;
+}
+
 .hotel-link.book {
     background-color: #766357;
+}
+
+.hotel-link.book:focus, .hotel-link.book:hover {
+    background-color: #604e43;
+}
+
+.hotel-link.book:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+.hotel-title a:focus, .hotel-title a:hover {
+    color: #81b3d2;
+}
+
+.hotel-title a:active {
+    color: #b2b2b2;
 }
 
 .hotel-item-rating {
