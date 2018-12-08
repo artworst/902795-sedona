@@ -13,7 +13,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a class="site-navigation-current" href="info.html">Информация</a></li>
+				<li><a href="info.html">Информация</a></li>
 				<li><a href="photo.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
 				<li class="navigation-hotel">
@@ -34,17 +34,19 @@
 			</div>
 			<div class="intro">
 				<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>				
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
 
 			<ul class="reasons-list">
-				<li class="reason-item-big">
-					<div class="description">
-						<h2>Настоящий городок</h2>
-						<p>- №1 -</p>
-						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+				<li class="reason-item-big with-features">
+					<div class="description-wrapper">
+						<div class="description">
+							<h2>Настоящий городок</h2>
+							<p>- №1 -</p>
+							<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+						</div>
+						<img src="img/city.jpg" alt="Фото гостиницы">
 					</div>
-					<img src="img/city.jpg" width="210" height="120" alt="Фото гостиницы">
 					<ul class="features-list">
 						<li class="feature-item">
 							<h2>Жилье</h2>
@@ -95,29 +97,36 @@
 					Укажите предполагаемые даты поездки,
 					и мы покажем вам лучшие предложения гостиниц в седоне
 				</p>
-				<form class="search-form" action="/search" method="POST">
+				<p>
 					<button class="form-title" type="button">Поиск гостиницы в Седоне</button>
+				</p>
+				<form class="search-form" action="/search" method="POST">
+
 					<section class="form-body">
 						<p class="form-item">
 							<label for="arrival-date">Дата заезда</label>
-							<input type="date" id="arrival-date" />
+							<input type="text" id="arrival-date" />
 						</p>
 						<p class="form-item">
 							<label for="departure-date">Дата выезда</label>
-							<input type="date" id="departure-date" />
+							<input type="text" id="departure-date" />
 						</p>
+						<div class="form-item persons-count">
+							<div>
+								<label for="form-item">Взрослые</label>
+								<button type="button">-</button>
+								<input type="number" id="adults" />
+								<button type="button">+</button>
+							</div>
+							<div>
+								<label for="children">Дети</label>
+								<button type="button">-</button>
+								<input type="number" id="children" />
+								<button type="button">+</button>
+							</div>
+						</div>
 						<p class="form-item">
-							<label for="adults">Взрослые</label>
-							<input type="text"/>
-							<input type="number" id="adults" />
-							<input type="text" />
-							<label for="children">Дети</label>
-							<input type="text"/>
-							<input type="number" id="children" />
-							<input type="text" />
-						</p>
-						<p class="form-item">
-							<button class="button" type="submit">Найти</button>
+							<button class="search-button" type="submit">Найти</button>
 						</p>
 					</section>
 				</form>
