@@ -143,12 +143,23 @@ ul {
 }
 
 .sedona-welcome {
-    background-image: url("../img/welcome-background-white.png");
+    background-image: url("../img/welcome-background.png");
     background-repeat: no-repeat;
-    height: 580px;
+    min-height: 508px;
+    position: relative;
 }
 
-.sedona-welcome img {
+.sedona-welcome:after {
+    content: "";
+    background-image: url(../img/welcome-mask.png);
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 100%;
+    height: 60px;
+}
+
+.welcome-img {
     width: 450px;
     margin-top: 80px;
 }
