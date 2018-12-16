@@ -33,29 +33,29 @@
 				<img class="welcome-img" src="img/welcome.svg">
 			</div>
 			<div class="intro">
-				<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<h1 class="intro-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
 			<ul class="reasons-list">
 				<li class="reason-item-big with-features">
 					<div class="description-wrapper">
 						<div class="description">
-							<h2>Настоящий городок</h2>
-							<p>- №1 -</p>
-							<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+							<h2 class="reason-header">Настоящий городок</h2>
+							<p class="reason-number">&mdash; №1 &mdash;</p>
+							<p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						</div>
 						<img src="img/city.jpg" alt="Фото гостиницы">
 					</div>
 					<ul class="features-list">
-						<li class="feature-item">
+						<li class="feature-item house">
 							<h2>Жилье</h2>
 							<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 						</li>
-						<li class="feature-item">
+						<li class="feature-item burger">
 							<h2>Еда</h2>
 							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
-						<li class="feature-item">
+						<li class="feature-item present">
 							<h2>Сувениры</h2>
 							<p>Не только китайского, но и местного производства!</p>
 						</li>
@@ -65,25 +65,25 @@
 				<li class="reason-item-big">
 					<img src="img/canyon.jpg" width="210" height="120" alt="Фото каньона">
 					<div class="description">
-						<h2>Там есть мост дьявола</h2>
-						<p>- №2 -</p>
-						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						<h2 class="reason-header">Там есть мост дьявола</h2>
+						<p class="reason-number">&mdash; №2 &mdash;</p>
+						<p class="reason-description second">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
 				</li>
 				<li class="reason-item">
-					<h2>Небольшая площадь</h2>
-					<p>- №3 -</p>
-					<p>Все достопремечательности находятся очень близко</p>
+					<h2 class="reason-header">Небольшая площадь</h2>
+					<p class="reason-number">&mdash; №3 &mdash;</p>
+					<p class="reason-description">Все достопремечательности находятся очень близко</p>
 				</li>
 				<li class="reason-item">
-					<h2>Красивая дорога</h2>
-					<p>- №4 -</p>
-					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<h2 class="reason-header">Красивая дорога</h2>
+					<p class="reason-number">&mdash; №4 &mdash;</p>
+					<p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 				<li class="reason-item">
-					<h2>Мало туристов</h2>
-					<p>- №5 -</p>
-					<p>Большинство едет в гранд каньон
+					<h2 class="reason-header">Мало туристов</h2>
+					<p class="reason-number">&mdash; №5 &mdash;</p>
+					<p class="reason-description">Большинство едет в гранд каньон
 						и толпится там</p>
 				</li>
 			</ul>
@@ -93,9 +93,49 @@
 				</h2>
 				<p>
 					Укажите предполагаемые даты поездки,
+				</p>
+				<p>
 					и мы покажем вам лучшие предложения гостиниц в седоне
 				</p>
-				<button class="form-title" type="button">Поиск гостиницы в Седоне</button>
+				<button class="popup-button" type="button">Поиск гостиницы в Седоне</button>
+
+				<div class="search-popup">
+						<form class="search-form" action="/search" method="POST">
+							<section class="form-body">
+								<p class="form-item">
+									<label for="arrival-date">Дата заезда:</label>
+									<input type="text" id="arrival-date" value="24 апреля 2017" />
+								</p>
+								<p class="form-item">
+									<label for="departure-date">Дата выезда:</label>
+									<input type="text" id="departure-date" value="4 июля 2017" />
+								</p>
+								<p>
+									<div class="persons-count-wrapper">
+										<div class="persons-count">
+											<label for="adults" class="adults-label">Взрослые:</label>
+											<div class="counter">
+												<button type="button">-</button>
+												<input type="number" id="adults" value="2" />
+												<button type="button">+</button>
+											</div>
+										</div>
+										<div class="persons-count">
+											<label for="children" class="children-label">Дети:</label>
+											<div class="counter">
+												<button type="button">-</button>
+												<input type="number" id="children" value="0" />
+												<button type="button">+</button>
+											</div>
+										</div>
+									</div>
+								</p>
+								<p class="form-item">
+									<button class="search-button" type="submit">Найти</button>
+								</p>
+							</section>
+						</form>
+					</div>				
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -161,44 +201,6 @@
 				</a>
 			</div>
 		</footer>
-
-		<section class="search-popup">
-			<form class="search-form" action="/search" method="POST">
-				<section class="form-body">
-					<p class="form-item">
-						<label for="arrival-date">Дата заезда:</label>
-						<input type="text" id="arrival-date" value="24 апреля 2017" />
-					</p>
-					<p class="form-item">
-						<label for="departure-date">Дата выезда:</label>
-						<input type="text" id="departure-date" value="4 июля 2017" />
-					</p>
-					<p>
-						<div class="persons-count-wrapper">
-							<div class="persons-count">
-								<label for="adults" class="adults-label">Взрослые:</label>
-								<div class="counter">
-									<button type="button">-</button>
-									<input type="number" id="adults" value="2" />
-									<button type="button">+</button>
-								</div>
-							</div>
-							<div class="persons-count">
-								<label for="children" class="children-label">Дети:</label>
-								<div class="counter">
-									<button type="button">-</button>
-									<input type="number" id="children" value="0" />
-									<button type="button">+</button>
-								</div>
-							</div>
-						</div>
-					</p>
-					<p class="form-item">
-						<button class="search-button" type="submit">Найти</button>
-					</p>
-				</section>
-			</form>
-		</section>
 	</div>
 </body>
 
