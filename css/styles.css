@@ -34,10 +34,11 @@ body {
     position: relative;
     left: 530px;
     top: -55px;
+    z-index: 1;
 }
 
 .main-navigation {
-    height: 56px;
+    min-height: 56px;
 }
 
 a {
@@ -151,10 +152,10 @@ ul {
 
 .sedona-welcome:after {
     content: "";
-    background-image: url(../img/welcome-mask.png);
+    background-image: url(../img/welcome-mask.svg);
     position: absolute;
     left: 0px;
-    bottom: -2px;
+    bottom: -3px;
     width: 100%;
     height: 60px;
 }
@@ -350,7 +351,7 @@ ul {
 .hotel-item {
     display: flex;
     flex-direction: row;
-    height: 90px;
+    min-height: 90px;
     padding: 30px 73px;
     border-bottom: 1px solid;
     border-color: #e5e5e5;
