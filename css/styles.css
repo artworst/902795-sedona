@@ -38,7 +38,7 @@ body {
     position: absolute;
     left: 50%;
     top: 0px;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     z-index: 1;
 }
 
@@ -65,7 +65,7 @@ ul {
     flex-direction: row;
     list-style: none;
     width: 1100px;
-    margin: 0px 33px;
+    margin: 0px 70px;
     align-items: center;
     min-height: 56px;
 }
@@ -91,7 +91,7 @@ ul {
 
 .site-navigation li:last-child {
     margin-right: 0px;
-    margin-left: 75px;
+    margin-left: 85px;
 }
 
 .site-navigation a {
@@ -411,7 +411,7 @@ ul {
 
 .search-popup.popup-show {
     display: block;
-    animation: open 1s ease-in 0s 1 forwards;
+    animation: open 0.7s ease-in 0s 1 forwards;
 }
 
 .search-popup.popup-error {
